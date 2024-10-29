@@ -2,7 +2,7 @@ from datetime import date
 
 from sqlalchemy.orm import Session
 
-from app.entity.article import Article, LawType
+from app.models.article import Article, LawType
 
 
 def create_article(db: Session, laws_name: LawType, article_number: str, title: str, text: str, last_modified: date):
